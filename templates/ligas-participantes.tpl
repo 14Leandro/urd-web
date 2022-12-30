@@ -15,7 +15,7 @@
             </div>
 
             <div class="caja-liga">
-                <a href="#">
+                <a href="ayacucho">
                     <figure>
                         <img src="img/ayacucho.jpg">
                         <div class="capa">
@@ -27,7 +27,7 @@
             </div>
 
             <div class="caja-liga">
-                <a href="#">
+                <a href="rauch">
                     <figure>
                         <img src="img/rauch.jpg">
                         <div class="capa">
@@ -39,7 +39,7 @@
             </div>
 
             <div class="caja-liga">
-                <a href="#">
+                <a href="juarez">
                     <figure>
                         <img src="img/juarez.jpg">
                         <div class="capa">

@@ -1,5 +1,6 @@
 <?php
 require_once './app/controllers/noticias.controller.php';
+require_once './app/controllers/admin.controller.php';
 require_once './app/controllers/index.controller.php';
 
 
@@ -28,7 +29,52 @@ switch ($params[0]) {
         $homeController = new HomeController();
         $homeController->showTandil();
         break;
-    
+    // Muestro equipos Ayacucho
+    case 'ayacucho':
+        $homeController = new HomeController();
+        $homeController->showAyacucho();
+        break;
+    // Muestro equipos Rauch
+    case 'rauch':
+        $homeController = new HomeController();
+        $homeController->showRauch();
+        break;
+    // Muestro equipos Juarez
+    case 'juarez':
+        $homeController = new HomeController();
+        $homeController->showJuarez();
+        break;
+
+    // Muestro Historia
+    case 'historia':
+        $homeController = new HomeController();
+        $homeController->showHistoria();
+        break;
+
+    // Muestro Contacto
+    case 'contacto':
+        $homeController = new HomeController();
+        $homeController->showContacto();
+        break;
+
+    // Muestro Noticias
+    case 'login':
+        $homeController = new HomeController();
+        $homeController->showLogin();
+        break;
+        
+    // Muestro Noticias
+    case 'admin':
+        $adminController = new AdminController();
+        $adminController->showAdmin();
+        break;
+        
+    // Muestro Noticias
+    case 'noticias':
+        $noticiasController = new NoticiasController();
+        $noticiasController->showNoticias();
+        break;
+
     // Muestro Noticias
     case 'adminNoticias':
         $noticiaController = new NoticiaController();

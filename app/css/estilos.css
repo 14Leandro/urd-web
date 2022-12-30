@@ -345,7 +345,9 @@ footer .btn-developers .modal-window div:not(:last-of-type){
     .banner-presentacion h2 span{
         display: block;
         font-size: 55px;
+        font-weight: 800;
     }
+
 .cont-equipos{
     padding: 50px;
     font-family: 'Poppins', sans-serif;
@@ -365,20 +367,20 @@ footer .btn-developers .modal-window div:not(:last-of-type){
             display: block;
             font-size: 40px;
         }
-    .cont-equipos .equipos{
+    .cont-equipos .equipos, .cont-campeones .equipos{
         display: flex;
     }
-    .cont-equipos .equipos .card{
+    .cont-equipos .equipos .card, .cont-campeones .equipos .card{
         margin-left: 50px;
         margin-bottom: 30px;
         background-color: rgba(0,44,104,1);
     }
-        .cont-equipos .equipos .card img{
+        .cont-equipos .equipos .card img, .cont-campeones .equipos .card img{
             height: 150px;
             object-fit: cover;
         }
 
-        .cont-equipos .equipos .card h5{
+        .cont-equipos .equipos .card h5, .cont-campeones .equipos .card h5{
             font-size: 17px;
             width: 100%;
             color: #fff;
@@ -387,7 +389,7 @@ footer .btn-developers .modal-window div:not(:last-of-type){
             margin-bottom: 20px;
             text-align: left;
         }
-        .cont-equipos .equipos .card h5 span{
+        .cont-equipos .equipos .card h5 span, .cont-campeones .equipos .card h5 span{
             display: block;
             font-size: 20px;
             font-weight: 700;
@@ -405,3 +407,194 @@ footer .btn-developers .modal-window div:not(:last-of-type){
                 font-size: 20px;
                 color: #fff;
             }
+
+/*-------------------- */
+
+
+
+.cont-noticias{
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(23,77,150,1);
+}
+
+    .cont-noticias .noticias .card{
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+    .cont-noticias .noticias .card img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .cont-noticias .noticias .card .card-body{
+        padding-left: 30px;
+    }
+        .cont-noticias .noticias .card .card-body h5{
+            border-left: 3px solid rgb(46,186,183);
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        .cont-noticias .noticias .card .card-body p{
+            padding-left: 10px;
+        }
+        .cont-noticias .noticias .card .card-body .btn{
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+.more-site{
+    padding-bottom: 200px;
+    background: rgb(46,186,183);
+    background: linear-gradient(45deg, rgba(46,186,183,1) 0%, rgba(0,120,118,1) 100%);
+}
+    .more-site .titulo{
+        padding: 50px;
+        margin-left: 50px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-weight: 600;
+    }
+    .more-site .titulo span{
+        display: block;
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .more-site .carousel{
+        max-height: 250px;
+        overflow: hidden;
+    }
+
+/*-------------------- */
+
+
+.cont-sede{
+    height: auto;
+    background-color: rgb(23,77,150);
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+    .cont-sede h2{
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+
+    }
+    .cont-sede p{
+        color: #fff;
+        max-width: 90%;
+        margin-left: 50px;
+
+    }
+
+.cont-campeones{
+    height: auto;
+    background: rgb(46,186,183);
+    background: linear-gradient(45deg, rgba(46,186,183,1) 0%, rgba(0,120,118,1) 100%);    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+    .cont-campeones h3{
+        color: rgb(0,49,94);
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+        .cont-campeones h3 span{
+            display: block;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+    .cont-campeones .equipos .card h5{
+        margin-bottom: 0px;
+    }
+    .cont-campeones .equipos .card .titulos{
+        font-size: 50px;
+        color: #fff;
+        margin-bottom: 0px;
+        text-align: right;
+        margin-right: 30px;
+        font-weight: 600;
+    }
+
+/*-------------------- */
+
+
+
+.cont-sede span{
+    display: block;
+    font-weight: 800;
+}
+.cont-campeones .carousel{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+}
+.ubicacion-estadio .cont-ubicacion{
+    height: 500px;
+}
+.cont-sede .card{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: rgb(0,49,94);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.cont-sede .card .card-header{
+    background-color: rgba(0,44,104);
+}
+.cont-sede .card h5{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.cont-sede .card p i{
+    color: #fff;
+    margin-right: 5px;
+}
+
+/*-------------------- */
+
+
+.cont-form-admin form{
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(0,49,94);
+    color: #fff;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+}
+.cont-form-admin .cont-form{
+    padding: 50px;
+    margin-bottom: 100px;
+}
+    .cont-form-admin form label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .cont-form-admin form input{
+        margin-bottom: 20px;
+        max-width: 60%;
+    }
+    .cont-form-admin form .btn{
+        float: right;
+        background-color: rgb(46,186,183);
+    }
+
+/*-------------------- */
+
+
+.cont-admin .banner-presentacion h2{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}

@@ -13,9 +13,12 @@ class HomeController {
 
     public function showHome() {
         $noticias = $this->model->getAllNoticias();
-
         $this->view->showHome($noticias);
         
+    }
+
+    public function showLogin() {
+        $this->view->showLogin();
     }
 
     public function showTandil() {
@@ -29,5 +32,12 @@ class HomeController {
     }
     public function showJuarez() {
         $this->view->showJuarez();
+    }
+
+    public function showHistoria() {
+        $this->view->showHistoria();
+    }
+    public function showContacto() {
+        $this->view->showContacto();
     }
 }
