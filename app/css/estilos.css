@@ -565,36 +565,151 @@ footer .btn-developers .modal-window div:not(:last-of-type){
 /*-------------------- */
 
 
-.cont-form-admin form{
-    padding: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: rgb(0,49,94);
+.main-admin-noticias{
+    display: block;
+    height: auto;
     color: #fff;
-    width: 80%;
     font-family: 'Poppins', sans-serif;
 }
-.cont-form-admin .cont-form{
-    padding: 50px;
-    margin-bottom: 100px;
+.main-admin-noticias .cont-datos-noticias{
+    margin-left: 70px;
+    margin-top: 50px;
 }
-    .cont-form-admin form label{
-        font-size: 20px;
-        margin-bottom: 10px;
+    .main-admin-noticias .cont-datos-noticias h2{
+        font-size: 30px;
+        text-transform: uppercase;
     }
-    .cont-form-admin form input{
-        margin-bottom: 20px;
-        max-width: 60%;
+    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia{
+        display: flex;
+        width: auto;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        background: rgb(23,77,150);
+        background: linear-gradient(-45deg, rgb(13, 53, 104) 0%, rgb(0, 24, 57) 100%);
+        border-radius: 10px;
     }
-    .cont-form-admin form .btn{
-        float: right;
-        background-color: rgb(46,186,183);
+    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der{
+        width: 70%;
+        display: block;
+        padding: 30px;
     }
+    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der{
+        width: 30%;
+        margin-right: 50px;
+    }
+        .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq input, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq textarea{
+            display: block;
+            width: 100%;
+            padding-left: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .titulo-not{
+                margin-bottom: 15px;
+                height: 40px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .categoria-not{
+                margin-bottom: 40px;
+                height: 30px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .descripcion-not{
+                height: 200px;
+                font-family: 'Poppins', sans-serif;
+                padding-top: 10px;
+                resize: none;
+            }
+                .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .descripcion-not::placeholder{
+                    float: left;
+                  }
+        .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der input{
+            width: 100%;
+        }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .fecha-not{
+                height: 40px;
+                margin-bottom: 15px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .selec-img-not{
+                margin-bottom: 40px;
+                height: 30px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not{
+                display: block;
+                padding-top: 5px;
+            }
+                .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnagregar, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnmodificar, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btncancelar{
+                    height: 50px;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 18px;
+                    box-shadow: 2px 3px 7px #000;
+                }
+                .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnagregar:hover, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnmodificar:hover, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btncancelar:hover{
+                    box-shadow: none;
+                    transition: 0.5s;
+                }
+                    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnagregar{
+                        background-color: rgb(97, 173, 104);
+                    }
+                    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnmodificar{
+                        background-color: rgb(226, 210, 120);
+                    }
+                    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btncancelar{
+                        background-color: rgb(255, 110, 110);
+                    }
 
-/*-------------------- */
-
-
-.cont-admin .banner-presentacion h2{
-    margin-top: 100px;
-    margin-bottom: 200px;
+.main-admin-noticias .cont-noticias-cargadas{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
+    .main-admin-noticias .cont-noticias-cargadas .table{
+        border: 1px solid #000;
+    }
+    .main-admin-noticias .cont-noticias-cargadas .table .table-titulos-celdas{
+        background-color: rgba(23,77,150,1);
+        height: 50px;
+    }
+    .main-admin-noticias .cont-noticias-cargadas .table td{
+        padding: 20px 0px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+        .main-admin-noticias .cont-noticias-cargadas .table-id{
+            width: 5%;
+        }
+        .main-admin-noticias .cont-noticias-cargadas .table-fecha{
+            width: 10%;
+        }
+        .main-admin-noticias .cont-noticias-cargadas .table-descripcion{
+            width: 30%;
+            height: 50px;
+            text-align: start;
+            padding-left: 10px;
+        }
+        .main-admin-noticias .cont-noticias-cargadas .table-botonera{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+            .main-admin-noticias .cont-noticias-cargadas .table-botonera input{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5px;
+                padding: 5px;
+                width: 80px;
+                border: none;
+                box-shadow: 2px 3px 7px #000;
+            }
+                .main-admin-noticias .cont-noticias-cargadas .table-botonera .table-btnseleccionar{
+                    background-color: rgb(97, 173, 104);
+                }
+                .main-admin-noticias .cont-noticias-cargadas .table-botonera .table-btnborrar{
+                    background-color: rgb(154, 39, 39);
+                    color: #fff;
+                }
+                .main-admin-noticias .cont-noticias-cargadas .table-botonera input:hover{
+                    box-shadow: none;
+                    transition: 0.5s;
+                }

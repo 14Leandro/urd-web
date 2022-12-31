@@ -77,8 +77,8 @@ switch ($params[0]) {
 
     // Muestro Noticias
     case 'adminNoticias':
-        $noticiaController = new NoticiaController();
-        $noticiaController->showNoticias();
+        $noticiaController = new NoticiasController();
+        $noticiaController->showNoticiasAdmin();
         break;
     
     // Noticia completa

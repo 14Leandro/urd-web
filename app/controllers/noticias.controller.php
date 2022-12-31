@@ -13,9 +13,12 @@ class NoticiasController {
 
     public function showNoticias() {
         $noticias = $this->model->getAllNoticias();
-
         $this->view->showNoticias($noticias);
-        
+    }
+
+    public function showNoticiasAdmin() {
+        $noticias = $this->model->getAllNoticias();
+        $this->view->showNoticiasAdmin($noticias);
     }
 
 }
