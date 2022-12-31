@@ -6,7 +6,7 @@
         </div>
 
     <div class="cont-form">
-        <form action="admin" method="post">
+        <form action="admin" method="post" class="form bg-light">
             <div class="form-group">
                 <label for="">Usuario</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

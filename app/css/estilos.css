@@ -564,6 +564,40 @@ footer .btn-developers .modal-window div:not(:last-of-type){
 
 /*-------------------- */
 
+.cont-admin .banner-presentacion .presentacion{
+    margin-bottom: 200px;
+}
+
+.cont-form-admin form{
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(0,49,94);
+    color: #000;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+}
+.cont-form-admin .cont-form{
+    padding: 50px;
+    margin-bottom: 100px;
+}
+    .cont-form-admin form label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .cont-form-admin form input{
+        margin-bottom: 20px;
+        max-width: 60%;
+    }
+    .cont-form-admin form .btn{
+        float: right;
+        background-color: rgb(46,186,183);
+    }
+
+/*-------------------- */
+
+/*-------------------- */
+
 
 .main-admin-noticias{
     display: block;
