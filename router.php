@@ -2,6 +2,7 @@
 require_once './app/controllers/noticias.controller.php';
 require_once './app/controllers/admin.controller.php';
 require_once './app/controllers/index.controller.php';
+require_once './app/controllers/auth.controller.php';
 
 
 
@@ -57,10 +58,22 @@ switch ($params[0]) {
         $homeController->showContacto();
         break;
 
-    // Muestro Noticias
+    // Muestro Formulario Login
     case 'login':
-        $homeController = new HomeController();
-        $homeController->showLogin();
+        $authController = new AuthController();
+        $authController->showLogin();
+        break;
+
+    // Valido los datos de Nombre y Contraseña
+    case 'validate':
+        $authController = new AuthController();
+        $authController->validateUser();
+        break;
+
+    // Cierra el session_start()
+    case 'logout':
+        $authController = new AuthController();
+        $authController->logout();
         break;
         
     // Muestro Noticias
