@@ -10,6 +10,7 @@ class NoticiasView {
 
     function showNoticias($noticias) {
         // Asigno variables al tpl smarty
+         
         $this->smarty->assign('noticias', $noticias);
         // Mostrar el tpl
         $this->smarty->display('noticiasList.tpl');
@@ -18,6 +19,7 @@ class NoticiasView {
     function showNoticiasAdmin($noticias) {
 
         // Asigno variables al tpl smarty
+        $this->smarty->assign('count', count($noticias));
         $this->smarty->assign('noticias', $noticias);
         // Mostrar el tpl
         $this->smarty->display('noticiasListAdmin.tpl');

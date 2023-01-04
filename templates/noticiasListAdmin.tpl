@@ -9,21 +9,27 @@
         <!-- Div formulario -->
         <div class="cont-datos-noticias">
             <form class="form-edicion-noticia" method="POST" enctype = "multipart/form-data">
-                <div class="form-izq">
-                    <input class="titulo-not" type="text" required name="txtTitulo" id="txtTitulo" placeholder="Ingrese título" value="">
-                    <input class="categoria-not" type="text" required name="txtCategoria" id="txtCategoria" placeholder="Ingrese categoria" value="">
-                    <textarea class="descripcion-not" type="text" name="txtDescripcion" id="txtDescripcion" placeholder="Ingrese descripción" value=""></textarea>
-                    <!--<input type="text" required readonly name="txtID" id="txtID" placeholder="ID" value="">-->
-                </div>
-                <div class="form-der">
-                    <input class="fecha-not" type="date" required name="txtFecha" id="txtFecha" value="">
 
-                    <input class="selec-img-not" type="file" name="txtImagen" id="txtImagen">
+                <div class="form-izq">
+                    <input class="titulo-not" type="text" required name="titulo" id="titulo" placeholder="Ingrese título">
+
+                    <input class="categoria-not" type="text" required name="categoria" id="categoria" placeholder="Ingrese categoria">
+
+                    <textarea class="descripcion-not" type="text" name="descripcion" id="descripcion" placeholder="Ingrese descripción"></textarea>
+
+                </div>
+
+                <div class="form-der">
+                    <input class="fecha-not" type="date" required name="fecha" id="fecha">
+
+                    <input class="selec-img-not" type="file" name="imagen" id="imageToUpload">
 
                     <div class="botonera-edicion-not">
+
                         <button class="btnagregar" type="submit" name="accion" value="Agregar">Agregar</button>
                         <button class="btnmodificar" type="submit" name="accion" value="Modificar">Modificar</button>
                         <button class="btncancelar" type="submit" name="accion" value="Cancelar">Cancelar</button>
+
                     </div>
                 </div>
 
@@ -45,41 +51,32 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($listaNoticias as $noticia){ ?>
+                    {foreach from=$noticias item=$noticia}
+                        
                     <tr>
-                        <td class="table-id"></td>
-                        <td class="table-categoria"></td>
-                        <td class="table-titulo"></td>
-                        <td class="table-fecha"></td>
-
-
+                        <td class="table-id text-light">{$noticia->id}</td>
+                        <td class="table-categoria text-light">{$noticia->categoria}</td>
+                        <td class="table-titulo text-light">{$noticia->titulo}</td>
+                        <td class="table-fecha text-light">{$noticia->fecha}</td>
                         <td class="table-imagen">
-                            <img src=""  width="50px" alt="">
+                            <img src="imagenesDb/{$noticia->imagen}"  width="50px" alt="{$noticia->imagen}">
                         </td>
-                        
-                        
-                        
-                        <td class="table-descripcion"><?php echo $noticia['descripcion'] ?></td>
-
+                        <td class="table-descripcion text-light">{$noticia->descripcion}</td>
                         <td class="table-botonera">
-                            
-                            <form method="POST">
 
-                                <input class="table-btnseleccionar" type="submit" name="accion" value="Seleccionar">
-                                
-                                <input class="table-btnborrar" type="submit" name="accion" value="Borrar">
+                            <a href='formModificar/{$noticia->id}' type="button" class="btn btn-success">Seleccionar</a>
 
-                                <input type="hidden" name="txtID" id="txtID" value="">
+                            <a href='borrar/{$noticia->id}' type='button' class='btn btn-danger'>Borrar</a>
 
-                            </form>
                         </td>
-
                     </tr>
+                {/foreach}
                 </tbody>
             </table>
         </div>
+        
     </section>
-
+    <p class="mx-4 text-light"><small>Mostrando {$count} noticias</small></p>
 </section>
 
 {include file="footer.tpl"}
