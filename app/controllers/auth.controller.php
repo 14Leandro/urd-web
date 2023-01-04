@@ -40,7 +40,8 @@ class AuthController {
     }
 
     public function logout() {
-        $this->authHelper->logout();
+        session_start();
+        session_destroy();
         header("Location: " . BASE_URL);
     }
 }
