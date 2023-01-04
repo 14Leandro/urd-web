@@ -2,6 +2,7 @@
 require_once './app/controllers/noticias.controller.php';
 require_once './app/controllers/admin.controller.php';
 require_once './app/controllers/index.controller.php';
+require_once './app/controllers/auth.controller.php';
 
 
 
@@ -22,6 +23,23 @@ switch ($params[0]) {
     case 'home':
         $homeController = new HomeController();
         $homeController->showHome();
+        break;
+
+    // Muestro el formulario de Login
+    case 'login':
+        $authController = new AuthController();
+        $authController->showLogin();
+        break;
+
+    // Valido los datos de Email y Contraseña
+    case 'validate':
+        $authController = new AuthController();
+        $authController->validateUser();
+        break;
+    // Cierra el session_start()
+    case 'logout':
+        $authController = new AuthController();
+        $authController->logout();
         break;
 
     // Muestro equipos Tandil

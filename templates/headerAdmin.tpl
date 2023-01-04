@@ -58,6 +58,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="home">Volver al sitio</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="logout">Cerrar Sesion</a>
+                            </li>
                         </ul>
                         
                     </div>
