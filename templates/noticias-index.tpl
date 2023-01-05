@@ -10,7 +10,9 @@
                     <a class="btn" href="#" role="button">Ver +</a>
                 </div>
                 </div>
-
+            
+            {* {foreach from=$noticias item=$noticia} *}
+                
             <div class="col-md-6 cont-noticias-horizontal">
                 <div class="card mb-3 noticia-horizontal" style="max-width: 540px;">
                 <div class="row g-0">
@@ -26,6 +28,7 @@
                     </div>
                 </div>
                 </div>
+            
                 <div class="card mb-3 noticia-horizontal" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -57,7 +60,7 @@
                 
             </div>
             </div>            
-            
+        {* {/foreach} *}
         </div>
         </div>
     </section>

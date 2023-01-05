@@ -19,6 +19,16 @@ class NoticiasModel {
         return $noticias;
     }
 
+    // Muestra las ultimas 3 noticias
+    // public function getUltimasNoticias() {
+
+    //     $query = $this->db->prepare("SELECT `categoria`, `titulo`, `fecha`, `imagen`, `descripcion` FROM noticias ORDER BY fecha DESC LIMIT 3");
+    //     $query->execute();
+
+    //     $tresNoticias = $query->fetchAll(PDO::FETCH_OBJ);
+    //     return $tresNoticias;
+    // }
+
     public function getNoticiaById($id) {
 
         $query = $this->db->prepare("SELECT `id`, `categoria`, `titulo`, `fecha`, `imagen`, `descripcion` FROM `noticias` WHERE id = id");

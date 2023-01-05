@@ -12,7 +12,7 @@
                    <div class="card mb-3" style="max-width: 70%;">
                      <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="img/liga1.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="imagenesDb/{$noticia->imagen}" class="img-fluid rounded-start" alt="{$noticia->titulo}">
                         </div>
                         <div class="col-md-8">
                         <div class="card-body">

@@ -16,6 +16,14 @@ class NoticiasView {
         $this->smarty->display('noticiasList.tpl');
     }
 
+    // function showUltimasNoticias($noticias) {
+    //     // Asigno variables al tpl smarty
+         
+    //     $this->smarty->assign('tresNoticias', $tresNoticias);
+    //     // Mostrar el tpl
+    //     $this->smarty->display('noticias-index.tpl');
+    // }
+
     function showNoticiasAdmin($noticias) {
 
         // Asigno variables al tpl smarty
