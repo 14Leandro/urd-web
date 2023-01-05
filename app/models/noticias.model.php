@@ -12,7 +12,7 @@ class NoticiasModel {
      
     public function getAllNoticias() {
 
-        $query = $this->db->prepare("SELECT * FROM noticias");
+        $query = $this->db->prepare("SELECT * FROM noticias ORDER BY fecha DESC");
         $query->execute();
 
         $noticias = $query->fetchAll(PDO::FETCH_OBJ);
